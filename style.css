@@ -1,0 +1,252 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #E8D88E;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #4A5F4F;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #4A5F4F;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #2C3E2F;
+}
+
+/* Navigation */
+nav {
+    background-color: #E8D88E;
+    padding: 0;
+    border-top: 1px solid #D4C47D;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #4A5F4F;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #D4C47D;
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    color: #2C5F2D;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E8D88E;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #4A5F4F;
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+section strong {
+    color: #2C5F2D;
+}
+
+/* Intro Section */
+#intro {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.intro-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.intro-text {
+    flex: 2;
+}
+
+.intro-sidebar {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image {
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4A5F4F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #2C3E2F;
+}
+
+/* News Section */
+#news {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#news ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#news ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+#news ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2C5F2D;
+    font-size: 1.5em;
+}
+
+/* Lists */
+.interest-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.interest-list li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.interest-list li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #2C5F2D;
+}
+
+/* Projects */
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-left: 4px solid #E8D88E;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    color: #666;
+}
+
+/* Links */
+a {
+    color: #2C5F2D;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li a {
+        border-bottom: 1px solid #D4C47D;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+}
